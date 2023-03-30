@@ -60,7 +60,7 @@
   }
   
   .my-logo {
-    position: absolute;
+    position: relative;
     left: 0vw;
     top: -8vw;
     width: 100%;
@@ -412,7 +412,7 @@
      color: rgb(0, 0, 0);
      height: 3vw;
      width: 5vw;
-     font-size: 1.2vw;
+     font-size: 2vw;
      letter-spacing:2.5px;
     /*position: relative;
      position: absolute;*/
@@ -434,7 +434,7 @@
      color: rgb(0, 0, 0);
      height: 2vw;
      width: 5vw;
-     font-size: 1.2vw;
+     font-size: 2vw;
      letter-spacing:2.5px;
         /*position: relative;
      position: absolute;*/
