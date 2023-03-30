@@ -402,27 +402,12 @@
      color:Red;
   }
   
-  .home-btnOLD {
-     text-align:center;
-     text-decoration: none;
-     font-family: 'PermanentMarker', cursive;
-     position: relative;
-     color: Gold;
-     height: 3vw;
-     width: 5vw;
-     font-size: 1.2vw;
-     letter-spacing:2.5px;
-    /*position: relative;
-     position: absolute;*/
-     /*left: 65%;*/
-     left: 65vw;
-     top: 15%;
-  }
+  
   
   .home-bt {
      text-align:center;
      text-decoration: none;
-     font-family: 'PermanentMarker', cursive;
+     font-family: 'PermanentMarker';
      position: relative;
      color: Gold;
      height: 3vw;
@@ -440,63 +425,11 @@
     display: inline-block;
   }
   
-  .portfolio-btnOLD {
-     text-align:center;
-     text-decoration: none;
-     font-family: 'PermanentMarker', cursive;
-     position: relative;
-     color: Gold;
-     height: 2vw;
-     width: 5vw;
-     font-size: 1.2vw;
-     letter-spacing:2.5px;
-     /*position: relative;
-     position: absolute;*/
-     /*left: 67%;*/
-     left: 73vw;
-     top: 15%;
-  }
-  
-  .portfolio-bt {
-     text-align:center;
-     text-decoration: none;
-     font-family: 'PermanentMarker', cursive;
-     position: relative;
-     color: Gold;
-     height: 2vw;
-     width: 5vw;
-     font-size: 1.2vw;
-     letter-spacing:2.5px;
-     /*position: relative;
-     position: absolute;*/
-     /*left: 67%;*/
-  }
-  
-  .portfolio-btn:hover{
-       color:Red;
-  }
-  
-  .skills-btnOLD {
-     text-align:center;
-     text-decoration: none;
-     font-family: 'PermanentMarker', cursive;
-     position: relative;
-     color: Gold;
-     height: 2vw;
-     width: 5vw;
-     font-size: 1.2vw;
-     letter-spacing:2.5px;
-        /*position: relative;
-     position: absolute;*/
-     /*left: 69%;*/
-     left: 85vw;
-     top: 15%;
-  }
   
   .skills-bt {
      text-align:center;
      text-decoration: none;
-     font-family: 'PermanentMarker', cursive;
+     font-family: 'PermanentMarker';
      position: relative;
      color: Gold;
      height: 2vw;
