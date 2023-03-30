@@ -28,8 +28,8 @@
   
   .my-main-banner {
     width: 100%;
-    background-color: #000000;
-    background-image: url(../images/BannerOptimized.png);
+    background-color: #fffefe;
+   /* background-image: url(../images/BannerOptimized.png);*/
     
     background-repeat: no-repeat;
     background-size: 100%;
@@ -45,7 +45,7 @@
   
   .my-secondary-banner {
     width: 100%;
-    background-color: #000000;
+    background-color: #ffffff;
     background-image: url(../images/emptyBannerOptimized.png);
     
     background-repeat: no-repeat;
@@ -93,7 +93,7 @@
   .centered-block {
       width: 100px; 
       left: 50%; 
-    /*  -webkit-transform: translate(-50%, 0); */
+      /*-webkit-transform: translate(-50%, 0); */
       position: absolute;
   }
   
@@ -139,7 +139,7 @@
     font-size: 26px;
     font-weight: 6;
     -webkit-text-stroke-width: 1.0px;
-    -webkit-text-stroke-color: rgb(255, 255, 255);
+    -webkit-text-stroke-color: rgb(0, 0, 0);
     word-wrap:break-word;
   }
   
@@ -409,7 +409,7 @@
      text-decoration: none;
      font-family: 'PermanentMarker';
      position: relative;
-     color: Gold;
+     color: rgb(0, 0, 0);
      height: 3vw;
      width: 5vw;
      font-size: 1.2vw;
@@ -431,7 +431,7 @@
      text-decoration: none;
      font-family: 'PermanentMarker';
      position: relative;
-     color: Gold;
+     color: rgb(0, 0, 0);
      height: 2vw;
      width: 5vw;
      font-size: 1.2vw;
