@@ -93,7 +93,7 @@
   .centered-block {
       width: 100px; 
       left: 50%; 
-      -webkit-transform: translate(-50%, 0); 
+    /*  -webkit-transform: translate(-50%, 0); */
       position: absolute;
   }
   
@@ -209,7 +209,7 @@
   }
   
   .iframe-class0 {
-      align: center; 
+    
       text-align : center;
       width: 50vw;
       height: 25vw;
@@ -228,7 +228,7 @@
   }
   
   .iframe-class {
-      align: center; 
+   
       text-align : center;
       width: 70vw;
       height: 35vw;
@@ -239,12 +239,12 @@
   .framecontainer0 {
       width: 50vw;
       height: 50vw;
-      align: center; 
+     
       text-align : center;
   }
   
   .framecontainer {
-      align: center; 
+    
       text-align : center;
   }
   
