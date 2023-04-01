@@ -37,6 +37,20 @@ async function getOpenAIResponse(userMessage) {
   }
 }
 
+
+const chatContainer = document.querySelector('.chat-container');
+const chatButton = document.getElementById('chat-button');
+const chatWidget = document.querySelector('.chat-widget');
+
+chatButton.addEventListener('click', () => {
+  chatWidget.classList.toggle('show');
+});
+
+
+
+
+
+
 chatForm.addEventListener('submit', async (e) => {
   e.preventDefault();
 

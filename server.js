@@ -9,11 +9,16 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 require('dotenv').config({ path: 'API.env' });
 
+
+
 // Serve the static files (CSS, JS, etc.)
 app.use(express.static(path.join(__dirname)));
 
 const apiKey = process.env.OPENAI_API_KEY;
 const url = "https://api.openai.com/v1/chat/completions";
+
+var defaultPrompt = process.env.DEFAULT_PROMPT ;
+
 
 async function getOpenAIResponse(userMessage) {
   try {
@@ -26,11 +31,11 @@ async function getOpenAIResponse(userMessage) {
       body: JSON.stringify({
         model: "gpt-3.5-turbo",
         messages: [
-          { role: "system", content: "You are a helpful assistant." },
+          { role: "system", content: defaultPrompt },
           { role: "user", content: userMessage },
         ],
-        temperature: 0.8,
-        max_tokens: 150,
+        temperature: 1.2,
+        max_tokens: 1000,
       }),
     });
 
