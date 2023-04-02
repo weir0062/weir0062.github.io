@@ -5,7 +5,6 @@ const chatBody = document.getElementById('chat-body');
 function scrollToBottom() {
   chatBody.scrollTop = chatBody.scrollHeight;
 }
-
 function addMessage(sender, message) {
   const messageElement = document.createElement('p');
   messageElement.textContent = `${sender}: ${message}`;
@@ -37,26 +36,17 @@ async function getOpenAIResponse(userMessage) {
   }
 }
 
-
 const chatContainer = document.querySelector('.chat-container');
 const chatButton = document.getElementById('chat-button');
 const chatWidget = document.querySelector('.chat-widget');
-
 chatButton.addEventListener('click', () => {
   chatWidget.classList.toggle('show');
 });
 
-
-
-
-
-
 chatForm.addEventListener('submit', async (e) => {
   e.preventDefault();
-
-  const userMessage = chatInput.value.trim();
-  if (!userMessage) return;
-
+  
+  const userMessage = chatInput.value;
   addMessage('You', userMessage);
   chatInput.value = '';
 

@@ -7,7 +7,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-require('dotenv').config({ path: 'API.env' });
+require('dotenv').config();
 
 
 
@@ -35,7 +35,7 @@ async function getOpenAIResponse(userMessage) {
           { role: "user", content: userMessage },
         ],
         temperature: 1.2,
-        max_tokens: 1000,
+        max_tokens: 512,
       }),
     });
 
@@ -62,7 +62,7 @@ app.post('/message', async (req, res) => {
 
 // Serve the Chat.html file
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'Chat.html'));
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 const PORT = process.env.PORT || 3000;
