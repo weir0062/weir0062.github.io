@@ -35,7 +35,7 @@ async function getOpenAIResponse(userMessage) {
           { role: "user", content: userMessage },
         ],
         temperature: 1.2,
-        max_tokens: 512,
+        max_tokens: 128,
       }),
     });
 

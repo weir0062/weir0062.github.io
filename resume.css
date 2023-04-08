@@ -1,61 +1,41 @@
+
 .my-main-banner {
   width: 100%;
   background-color: #fffefe;
- /* background-image: url(../images/BannerOptimized.png);*/
-  
-  background-repeat: no-repeat;
-  background-size: 100%;
- 
-  /* position: fixed;*/
-  background-position: 0px 50%;
-  position: absolute;
-  height: 20vw;
-  top: 0;
-  left:0;
-}
-
-
-.my-secondary-banner {
-  width: 100%;
-  background-color: #ffffff;
-  background-image: url(../images/emptyBannerOptimized.png);
-  
-  background-repeat: no-repeat;
-  background-size: 100%;
- 
-  /* position: fixed;*/
-  background-position: 0px 50%;
-  position: absolute;
-  height: 26vw;
-  top: 0;
-  left:0;
+  position:fixed;
+  text-align: center;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+	top: -1vw;
 }
 
 .my-logo {
-  position: absolute;
-  left: -5%;
-  top: -22.5%;
+  display: block;
   width: 100%;
-  height: 100%;
-  max-width: 77vw; 
-  max-height:89vw;
+  max-height: 500px;
+  object-fit: cover;
+	
 }
 
-
+.learnaboutMe {
+  font-family: Cursive;
+  color: black;
+  margin-top: 10px;
+}
 
 .home-bt {
   text-align:center;
   text-decoration: none;
   font-family: 'PermanentMarker';
   position: relative;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   height: 3vw;
   width: 5vw;
   font-size: 2vw;
   letter-spacing:2.5px;
- /*position: relative;
-  position: absolute;*/
-  /*left: 65%;*/
+	top: -3vw;
 }
 
 .space {
@@ -70,14 +50,12 @@
   text-decoration: none;
   font-family: 'PermanentMarker';
   position: relative;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   height: 2vw;
   width: 5vw;
   font-size: 2vw;
-  letter-spacing:2.5px;
-     /*position: relative;
-  position: absolute;*/
-  /*left: 69%;*/
+  letter-spacing:2.5px;	
+  top: -3vw;
 }
 
 .btn-placement {
@@ -96,6 +74,24 @@ body {
   min-height: 100vh;
   margin: 0;
   font-family: Arial, sans-serif;
+}
+
+
+
+.my-secondary-banner {
+  width: 100%;
+  background-color: #ffffff;
+  background-image: url(../images/emptyBannerOptimized.png);
+  
+  background-repeat: no-repeat;
+  background-size: 100%;
+ 
+  /* position: fixed;*/
+  background-position: 0px 50%;
+  position: absolute;
+  height: 26vw;
+  top: 0;
+  left:0;
 }
 
 .chat-container {
@@ -143,6 +139,7 @@ body {
   flex-grow: 1;
   overflow-y: auto;
   background-color: rgb(255, 255, 255);
+  text-align: left;
   padding: 10px;
   height: 300px; /* Set a fixed height */
 }
@@ -178,7 +175,7 @@ body {
 
 .centered-block-75-small-margin {
    text-align : center;
-   margin-top: 1vw;
+   margin-top: 5vw;
    margin-right: 13vw;
    margin-left: 13vw;
    margin-bottom: 3vw;
@@ -198,7 +195,7 @@ body {
   font-family: PermanentMarkerReg;
   font-size: 22px;
   font-weight: 6;
-  
+  margin-top: 3vw;
   -webkit-text-stroke-width: 1.0px;
   -webkit-text-stroke-color: rgb(0, 0, 0);
   word-wrap:break-word;
