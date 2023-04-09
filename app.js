@@ -23,11 +23,9 @@ function addMessage(sender, message) {
 }
 
 async function getOpenAIResponse(userMessage) {
- console.error(userId + "in response before try");
  
 	try {
 	  
-	  console.error(userId + "in response after try");
     const response = await fetch('https://mychat-charlesweir.herokuapp.com/message', {
       method: 'POST',
       headers: {
@@ -43,7 +41,7 @@ async function getOpenAIResponse(userMessage) {
     }
 
     const data = await response.json();
-    return data.message;
+    return data.message + (userId + "in response before try");
   } catch (error) {
     console.error('Error getting response:', error);
     return 'Error: Unable to get response from OpenAI API';
