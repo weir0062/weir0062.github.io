@@ -31,7 +31,7 @@ async function getOpenAIResponse(userMessage) {
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ message: userMessage }, {id: userId}),
+      body: JSON.stringify({ message: userMessage, id: userId}),
     });
 
     if (!response.ok) {
