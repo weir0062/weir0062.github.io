@@ -41,7 +41,7 @@ async function getOpenAIResponse(userMessage) {
     }
 
     const data = await response.json();
-    return data.message + (userId + "in response before try");
+    return data.message;
   } catch (error) {
     console.error('Error getting response:', error);
     return 'Error: Unable to get response from OpenAI API';
