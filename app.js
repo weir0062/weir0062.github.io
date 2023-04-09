@@ -12,9 +12,9 @@ function addMessage(sender, message) {
   if(b)
   {
    b= false;
-   const messageElement = document.createElement('p');
-   messageElement.textContent = `poopy badoopy`;
-   chatBody.appendChild(messageElement);
+   const msgelmt = document.createElement('p');
+   msgelmt.textContent = `poopy badoopy`;
+   chatBody.appendChild(msgelmt);
   }
   const messageElement = document.createElement('p');
   messageElement.textContent = `${sender}: ${message}`;
