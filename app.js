@@ -5,7 +5,16 @@ const chatBody = document.getElementById('chat-body');
 function scrollToBottom() {
   chatBody.scrollTop = chatBody.scrollHeight;
 }
+let b = true;
+
+
+
 function addMessage(sender, message) {
+  if(b)
+  {
+   b= false;
+   console.error('haha ');
+  }
   const messageElement = document.createElement('p');
   messageElement.textContent = `${sender}: ${message}`;
   chatBody.appendChild(messageElement);
