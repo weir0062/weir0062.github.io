@@ -24,6 +24,8 @@ function addMessage(sender, message) {
 
 async function getOpenAIResponse(userMessage) {
   try {
+	  console.error(userId);
+	  
     const response = await fetch('https://mychat-charlesweir.herokuapp.com/message', {
       method: 'POST',
       headers: {
