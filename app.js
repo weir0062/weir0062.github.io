@@ -8,12 +8,13 @@ function scrollToBottom() {
 let b = true;
 
 
-
 function addMessage(sender, message) {
   if(b)
   {
    b= false;
-   console.error('haha ');
+   const messageElement = document.createElement('p');
+   messageElement.textContent = `poopy badoopy`;
+   chatBody.appendChild(messageElement);
   }
   const messageElement = document.createElement('p');
   messageElement.textContent = `${sender}: ${message}`;
