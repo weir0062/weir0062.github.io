@@ -5,16 +5,15 @@ const chatBody = document.getElementById('chat-body');
 function scrollToBottom() {
   chatBody.scrollTop = chatBody.scrollHeight;
 }
-let b = true;
-
+let UserIsNew = true;
+const UserId = 0;
 
 function addMessage(sender, message) {
-  if(b)
+  if(UserIsNew)
   {
-   b= false;
-   const msgelmt = document.createElement('p');
-   msgelmt.textContent = `poopy badoopy`;
-   chatBody.appendChild(msgelmt);
+    UserIsNew= false;
+    userId = Math.floor(Math.random()*69696969);
+    
   }
   const messageElement = document.createElement('p');
   messageElement.textContent = `${sender}: ${message}`;
@@ -29,7 +28,7 @@ async function getOpenAIResponse(userMessage) {
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ message: userMessage }),
+      body: JSON.stringify({ message: userMessage }, {id: userId}),
     });
 
     if (!response.ok) {
