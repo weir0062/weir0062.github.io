@@ -13,7 +13,7 @@ function addMessage(sender, message) {
   {
     UserIsNew= false;
     userId = Math.floor(Math.random()*69696969);
-	  console.log('ZALUPA');
+	  console.error('ZALUPA');
     
   }
   const messageElement = document.createElement('p');
