@@ -53,7 +53,6 @@ chatForm.addEventListener('submit', async (e) => {
   const chatbotResponse = await getOpenAIResponse(userMessage);
   addMessage('Chatbot', chatbotResponse);
 
-  chatInput.value = '';
 });
 
 scrollToBottom();
