@@ -5,7 +5,16 @@ const chatBody = document.getElementById('chat-body');
 function scrollToBottom() {
   chatBody.scrollTop = chatBody.scrollHeight;
 }
+let UserIsNew = true;
+const UserId = 0;
+
 function addMessage(sender, message) {
+  if(UserIsNew)
+  {
+    UserIsNew= false;
+    userId = Math.floor(Math.random()*69696969);
+    
+  }
   const messageElement = document.createElement('p');
   messageElement.textContent = `${sender}: ${message}`;
   chatBody.appendChild(messageElement);
@@ -13,13 +22,15 @@ function addMessage(sender, message) {
 }
 
 async function getOpenAIResponse(userMessage) {
-  try {
-    const response = await fetch('/message', {
+ 
+	try {
+	  
+    const response = await fetch('https://mychat-charlesweir.herokuapp.com/message', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ message: userMessage }),
+      body: JSON.stringify({ message: userMessage, id: userId}),
     });
 
     if (!response.ok) {
@@ -53,7 +64,6 @@ chatForm.addEventListener('submit', async (e) => {
   const chatbotResponse = await getOpenAIResponse(userMessage);
   addMessage('Chatbot', chatbotResponse);
 
-  chatInput.value = '';
 });
 
 scrollToBottom();
