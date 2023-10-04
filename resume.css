@@ -139,8 +139,7 @@ body {
   flex-grow: 1;
   overflow-y: auto;
   background-color: rgb(255, 255, 255);
-  padding: 0px;
-t;
+  text-align: left;
   padding: 10px;
   height: 300px; /* Set a fixed height */
 }
