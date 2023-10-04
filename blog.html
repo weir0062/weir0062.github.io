@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+ <html>
+  <head>
+    <title>Charles Weir Blog</title>
+    <link rel="shortcut icon" href="images/favicon.png"/>
+    <link rel="icon" type="image/png" href="images/favicon.png"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/blog.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="custom-navbar home">
+    <span class="navbar-brand">Charles Weir</span>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="blog.html">Blog</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+<!-- End of Navigation Bar -->
+
+<main>
+    
+<!-- Blog Post 1 -->
+<section class="post" onclick="openModal('modal1')">
+    <img src="./images/pic1.jpg" alt="Blog Post Image 1">
+    <div class="post-content">
+        <h2>Blog Post Title 1</h2>
+        <p>Blog post summary for post 1 goes here...</p>
+    </div>
+</section>
+<!-- Modal for Blog Post 1 -->
+<div id="modal1" class="modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('modal1')">&times;</span>
+        <h2>Blog Post Title 1</h2>
+        <p>Full content of the blog post 1 goes here...</p>
+    </div>
+</div>
+
+<!-- Blog Post 2 -->
+<section class="post" onclick="openModal('modal1')">
+    <img src="./images/pic1.jpg" alt="Blog Post Image 1">
+    <div class="post-content">
+        <h2>Blog Post Title 1</h2>
+        <p>Blog post summary for post 1 goes here...</p>
+    </div>
+</section>
+
+<!-- Modal for Blog Post 2 -->
+<div id="modal1" class="modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('modal1')">&times;</span>
+        <h2>Blog Post Title 1</h2>
+        <p>Full content of the blog post 1 goes here...</p>
+    </div>
+</div>
+
+
+
+
+<!-- Blog Post 3 -->
+<section class="post" onclick="openModal('modal3')">
+    <img src="./images/blog/SnakeGame.jpg" alt="Blog Post Image 1">
+    <div class="post-content">
+        <h2>Snake Game Plugin</h2>
+        <p>A classic snake game made using plugins.</p>
+    </div>
+</section>
+<!-- Modal for Blog Post 3 -->
+
+
+
+
+
+
+<div id="modal3" class="modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('modal3')">&times;</span>
+        <h2>Snake Game Plugin</h2>
+        <p> This Snake game is a demonstration of my skills in utilizing external libraries and plugins.
+            streamline the gameplay mechanics and optimize performance, 
+            wrote a custom plugin in C++ that manages all the movement and collision detection in real-time.
+            This involved designing and implementing custom algorithms that suit the requirements of the game.
+            By utilizing this plugin, I was able to create a classic snake game.</p>
+        <a href="https://chakki2209.itch.io/snake-game" target="_blank" class="modal-btn">Test the Game</a>
+        <img src="./images/blog/SnakeGame.jpg" alt="Blog Post Image 1">
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+</main>
+
+
+</body>
+
+<script src="./js/blog.js"></script>
+
+
+
+
+
+</html>
+  

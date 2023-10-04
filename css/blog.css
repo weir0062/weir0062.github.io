@@ -1,0 +1,160 @@
+main {
+    max-width: 90%;
+    margin: 2vw auto;
+    padding: 1vw;
+    background-color: #fff;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+:root {
+--button-text-color: black;
+
+}
+/* Стили для каждого блогового поста */
+.post {
+    display: flex;
+    border-bottom: 1px solid #eee;
+    padding: 2vw 0;
+    transition: background-color 0.3s;
+}
+
+.post:hover {
+    background-color: #f9f9f9;
+}
+
+.post:last-child {
+    border-bottom: none;
+}
+
+/* Стили для изображений блога */
+.post img {
+    max-width: 30%;
+    margin-right: 2vw;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для контента каждого блогового поста */
+.post-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.post-content h2 {
+    font-size: 2em;
+    margin-bottom: 1vw;
+    color: #333;
+}
+
+.post-content p {
+    margin-bottom: 1vw;
+    color: #777;
+}
+
+.post-content a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.post-content a:hover {
+    color: #0056b3;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+
+.modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 2vw;
+    border-radius: 1vw;
+    font-size: 1.5vw;
+    width: 60%;
+    box-shadow: 0 1vw 4vw rgba(0, 0, 0, 0.2);
+}
+.modal-content a {
+    color: #007BFF;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.modal-content h2 {
+    font-size: 2.5vw;
+    margin-left: 25%;
+    
+}
+
+.modal-content a:hover {
+    color: var(--button-text-color);
+    text-decoration: none;
+}
+.modal img {
+    max-width: 77%;
+    position: center;
+    margin-left: 10%;
+    border-radius: 5px;
+    box-shadow: 0vw 1vw 2.5vw rgba(0, 0, 0, 0.1);
+}
+.close-btn {
+    position: absolute;
+    right: 3%;
+    top: 3%;
+    color: #aaa;
+    font-size: 2vw;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: red;
+}
+.modal-btn {
+    
+    display:table; /* Делает кнопку блочным элементом */
+    background-color: #007BFF;
+    color: #080000;
+    padding: 1vw 1vw; /* Увеличиваем отступы для большего размера кнопки */
+    border-radius: 0.5vw; /* Скругляем края для более мягкого вида */
+    text-decoration: none;
+    margin: 1vw auto; /* Центрируем кнопку горизонтально и добавляем вертикальные отступы */
+    text-align: center; /* Центрируем текст в кнопке */
+    font-weight: bold; /* Делаем текст жирным */
+    transition: background-color 0.3s, transform 0.3s; /* Добавляем плавную анимацию для фона и трансформации */
+}
+
+.modal a{
+    color: var(--button-text-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.modal-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Увеличиваем кнопку немного при наведении */
+}
+
+
+.modal-btn.centered {
+    margin: 1vw auto;
+}

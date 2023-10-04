@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f4;
+}
+
+
+:root {
+  --navbar-bg-color-default: #333;
+  --navbar-text-color: #FFF;
+  --navbar-text-active-bg-color:rgba(20, 20, 0, 0.1);;
+  --navbar-text-active-color: #ebff33;
+  --chat-bg-color: #FF5733;
+  --chat-btn-color: #333;
+  --chat-header-color: #222;
+  --chat-active-color: #fc97ee;
+  
+  --content-bg-color: #FFF;
+  --content-text-color: #555;
+}
+
+.custom-navbar {
+  position: relative;
+  z-index: 1000;
+  background-color: var(--navbar-bg-color-default);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1.5em;
+}
+
+.navbar-brand {
+  color: var(--navbar-text-color);
+  font-size: 2em;
+  margin-left: 2vh;
+}
+
+
+.navbar-nav {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  margin-right: 2em;
+  font-size: 1.69em;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--navbar-text-color);
+  padding: 0px 20px; /* добавим паддинг */
+  display: inline-block; /* чтобы паддинг и анимации применялись корректно */
+  transition: transform 0.3s, background-color 0.3s; /* добавим анимацию на фон тоже */
+  border-radius: 5px; /* небольшой радиус для закругления углов */
+}
+
+
+
+
+.nav-link:hover,
+.nav-link:active,
+.nav-link:focus {  
+  color: var(--navbar-text-active-color);
+  background-color: var(--navbar-text-active-bg-color); /* немного фона при наведении */
+  transform: translateY(-5px);
+
+}
