@@ -1,17 +1,24 @@
-main {
-    max-width: 90%;
-    margin: 2vw auto;
-    padding: 1vw;
-    background-color: #fff;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    overflow: hidden;
-}
+
 
 :root {
 --button-text-color: rgb(255, 255, 255);
 --button-color: rgb(44, 30, 30);
 }
+
+
+
+
+@media (min-width: 800px) {
+
+    main {
+        max-width: 90%;
+        margin: 2vw auto;
+        padding: 1vw;
+        background-color: #fff;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        overflow: hidden;
+    }
 /* Стили для каждого блогового поста */
 .post {
     display: flex;
@@ -167,4 +174,139 @@ main {
 
 .modal-btn.centered {
     margin: 1vw auto;
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 800px) {
+
+
+
+
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* стили для навигации */
+.custom-navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    padding: 0 20px;
+}
+
+.navbar-nav {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar-nav li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.navbar-nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* стили для блогов */
+.post {
+    background-color: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.post img {
+    width: 100%;
+    height: auto;
+}
+
+.post-content {
+    padding: 10px 0;
+}
+
+/* стили для модальных окон */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    overflow: auto;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    width: 70%;
+}
+
+.close-btn {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.modal-btn {
+    display: block;
+    margin: 20px 0;
+    padding: 10px 15px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+
+
+
+
 }
