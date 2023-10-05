@@ -1,7 +1,17 @@
 function openModal(modalId) {
-    document.getElementById(modalId).style.display = "block";
+    const modal = document.getElementById(modalId);
+    modal.style.display = 'block';
+    document.body.style.overflow = 'hidden'; 
+
+    modal.querySelector('.modal-overlay').addEventListener('click', function() {
+        closeModal(modalId);
+    });
 }
 
 function closeModal(modalId) {
-    document.getElementById(modalId).style.display = "none";
+    const modal = document.getElementById(modalId);
+    if (modal && modal.style.display === 'block') {
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto'; 
+    }
 }

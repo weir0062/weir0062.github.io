@@ -9,8 +9,8 @@ main {
 }
 
 :root {
---button-text-color: black;
-
+--button-text-color: rgb(255, 255, 255);
+--button-color: rgb(44, 30, 30);
 }
 /* Стили для каждого блогового поста */
 .post {
@@ -72,8 +72,8 @@ main {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
     z-index: 1000;
+    
 }
 
 .modal-overlay {
@@ -88,12 +88,17 @@ main {
 .modal-content {
     position: relative;
     background-color: #fefefe;
-    margin: 10% auto;
+    margin: 5% auto;
     padding: 2vw;
     border-radius: 1vw;
     font-size: 1.5vw;
     width: 60%;
     box-shadow: 0 1vw 4vw rgba(0, 0, 0, 0.2);
+    max-height: 80vh;
+    overflow-y: auto; /* Прокрутка по вертикали, если содержимое выходит за пределы */    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .modal-content a {
     color: #007BFF;
@@ -101,20 +106,27 @@ main {
     transition: color 0.3s;
 }
 .modal-content h2 {
+    text-align: center; 
     font-size: 2.5vw;
-    margin-left: 25%;
-    
+    margin: 1vw 0;  
 }
+
 
 .modal-content a:hover {
     color: var(--button-text-color);
     text-decoration: none;
 }
+
+.modal-content iframe {
+    width: 100vh; 
+    height: 50vh;  
+    display: block; 
+}
+
 .modal img {
     max-width: 77%;
     position: center;
-    margin-left: 10%;
-    border-radius: 5px;
+    border-radius: 1vw;
     box-shadow: 0vw 1vw 2.5vw rgba(0, 0, 0, 0.1);
 }
 .close-btn {
@@ -131,29 +143,27 @@ main {
     color: red;
 }
 .modal-btn {
-    
-    display:table; /* Делает кнопку блочным элементом */
-    background-color: #007BFF;
+    display: block;  /* Делает кнопку блочным элементом */
+    background-color:var(--button-color);
     color: #080000;
-    padding: 1vw 1vw; /* Увеличиваем отступы для большего размера кнопки */
-    border-radius: 0.5vw; /* Скругляем края для более мягкого вида */
+    padding: 1vw 2vw;  /* Увеличиваем отступы для большего размера кнопки */
+    border-radius: 0.5vw;  /* Скругляем края для более мягкого вида */
     text-decoration: none;
-    margin: 1vw auto; /* Центрируем кнопку горизонтально и добавляем вертикальные отступы */
-    text-align: center; /* Центрируем текст в кнопке */
-    font-weight: bold; /* Делаем текст жирным */
-    transition: background-color 0.3s, transform 0.3s; /* Добавляем плавную анимацию для фона и трансформации */
+    margin: 1vw auto;  /* Центрируем кнопку горизонтально и добавляем вертикальные отступы */
+    text-align: center;  /* Центрируем текст в кнопке */
+    font-weight: bold;  /* Делаем текст жирным */
+    transition: background-color 0.3s, transform 0.3s;  /* Добавляем плавную анимацию для фона и трансформации */
+    width: fit-content;  /* Пусть ширина кнопки соответствует содержимому, но не растягивается на всю ширину контейнера */
 }
-
 .modal a{
     color: var(--button-text-color);
     text-decoration: none;
     transition: color 0.3s;
 }
 .modal-btn:hover {
-    background-color: #0056b3;
+    background-color: var(--button-color);
     transform: scale(1.05); /* Увеличиваем кнопку немного при наведении */
 }
-
 
 .modal-btn.centered {
     margin: 1vw auto;
