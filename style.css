@@ -5,7 +5,7 @@
 }
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #f4f4f4;
+  background-color: #f4f4f4; 
 }
 
 
@@ -23,6 +23,7 @@ body {
   --content-text-color: #555;
 }
 
+@media only screen and (min-width: 1200px) {
 .custom-navbar {
   position: relative;
   z-index: 1000;
@@ -70,5 +71,57 @@ body {
   color: var(--navbar-text-active-color);
   background-color: var(--navbar-text-active-bg-color); /* немного фона при наведении */
   transform: translateY(-5px);
+
+}
+
+
+
+
+
+}
+
+
+
+
+
+@media only screen and (max-width: 1200px) {
+
+
+
+
+  .custom-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 1em;
+    color: #FFF;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5em;
+  }
+  
+  .navbar-nav {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .nav-item {
+    display: inline;
+    margin: 0 0.5em;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #FFF;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .nav-link:hover {
+    background-color: #555;
+  }
 
 }

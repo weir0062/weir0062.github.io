@@ -1,8 +1,20 @@
 
 .chat-header {
-    background-color: var(--chat-header-color);
-  }
-  
+  background-color: var(--navbar-bg-color-default);
+  color: white;
+  border-bottom: 0.2vh solid #ccc;
+  padding: 1vh;
+  text-align: center;
+}
+
+.chat-form button {
+  border: none;
+  background-color: var(--chat-btn-color);
+  color: white;
+  padding: 0.5vh 1vh;
+  cursor: pointer;
+}
+   
   .chat-form button:hover {
     background-color: var(--chat-bg-color);
   }
@@ -10,8 +22,8 @@
   
   .chat-container {
     position: fixed;
-    bottom: 20px;
-    left: 20px;
+    bottom: 2vh;
+    left: 2vh;
     display: flex;
     align-items: flex-end;
     z-index: 9999;
@@ -22,26 +34,26 @@
     border: none;
     background-color:var(--chat-btn-color);
     color: white;
-    padding: 5px 10px;
+    padding: 0.5vh 1vh;
     cursor: pointer;
   }
   .chat-container button:hover {
     background-color: var(--chat-active-color);
     color: var(--navbar-text-color);
-    transform: translateY(-5px);
+    transform: translateY(-0.5vh);
     transition: transform 0.3s, background-color 0.3s;
   }
   
   .chat-widget {
-    width: 300px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 30vh;
+    border: 0.1vh solid #ccc;
+    border-radius: 0.5vh;
+    box-shadow: 0 0.2vh 1vh rgba(0, 0, 0, 0.1);
     display: none; /* hide the chat widget by default */
     flex-direction: column;
     position: relative;
     z-index: 1;
-    margin-left: 10px;
+    margin-left: 1vh;
   }
   
   .chat-widget.show {
@@ -51,47 +63,71 @@
   .chat-header {
     background-color: --navbar-bg-color-default;
     color: white;
-    border-bottom: 1px solid #ccc;
-    padding: 10px;
+    border-bottom: 0.2vh solid #ccc;
+    padding: 1vh;
     text-align: center;
   }
   
-  .chat-body {
-    flex-grow: 1;
-    overflow-y: auto;
-    background-color: rgb(255, 255, 255);
-    padding: 0px;
-    padding: 1vw;
-    height: 18vw; /* Set a fixed height */
-  }
   
   .chat-form {
     display: flex;
     background-color: #f3d9d9;
-    padding: 10px;
-    border-top: 1px solid #ccc;
+    padding: 1vh;
+    border-top: 0.1vh solid #ccc;
   }
   
   .chat-form input {
     flex-grow: 1;
     border: none;
     outline: none;
-    padding: 5px;
+    padding: 0.5vh;
   }
   
   .chat-form button {
     border: none;
     background-color:--chat-btn-color;
     color: white;
-    padding: 5px 10px;
+    padding: 0.5vh 1vh;
     cursor: pointer;
   }
   
+
+
+
+
+
+@media (min-width: 1400px) {
+
+
+
+
+  main {
+    max-width: 90%;
+    padding: 1vw;
+    background-color: #fff;
+    box-shadow: 0px 0.77vw 1.5vw rgba(0, 0, 0, 0.1);
+    border-radius: 0.5vw;
+    overflow: hidden;
+    display: flex;
+
+}
+
   
+.chat-body {
+  flex-grow: 1;
+  overflow-y: auto;
+  background-color: rgb(255, 255, 255);
+  padding: 0px;
+  padding: 1vw;
+  height: 22vw; /* Set a fixed height */
+}
+
+
   .about-charlie, .charlie-resume {
-    padding: 2vw;
+    padding: 2vw 1vw;
     background-color: var(--content-bg-color);
-    margin: 2vw 0;
+    margin: 2vw 3vw;
+    border-bottom: 0.2vw solid #eee;
     box-shadow: 0 2vw 1vw rgba(0, 0, 0, 0.1);
   }
   
@@ -128,3 +164,68 @@
   .charlie-description p, .charlie-resume p {
     color: var(--content-text-color);
   }
+
+
+}
+
+
+
+@media (max-width: 1400px) {
+
+
+
+
+  .chat-body {
+    flex-grow: 1;
+    overflow-y: auto;
+    background-color: rgb(255, 255, 255);
+    padding: 0px;
+    padding: 1vw;
+    height: 65vw; /* Set a fixed height */
+  }
+
+/* Общие стили */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F2F2F2;
+}
+
+
+/* Стили для секции о Чарли */
+.about-charlie {
+  background-color: #FFF;
+  padding: 2em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 2em 0;
+}
+
+.charlie-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+
+.charlie-image img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 50%;
+}
+
+.charlie-description h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+/* Стили для секции резюме */
+.charlie-resume {
+  background-color: #FFF;
+  padding: 2em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 2em 0;
+} 
+ 
+
+}
