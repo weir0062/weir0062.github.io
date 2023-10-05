@@ -209,21 +209,21 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 120vh;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 2vh;
 }
 
 /* стили для навигации */
 .custom-navbar {
     background-color: #333;
     color: #fff;
-    padding: 10px 0;
+    padding: 1vh 0;
 }
 
 .navbar-brand {
-    font-size: 24px;
-    padding: 0 20px;
+    font-size: 2.4vh;
+    padding: 0 2vh;
 }
 
 .navbar-nav {
@@ -233,7 +233,7 @@ body {
 
 .navbar-nav li {
     display: inline-block;
-    margin-left: 20px;
+    margin-left: 2vh;
 }
 
 .navbar-nav a {
@@ -244,8 +244,8 @@ body {
 /* стили для блогов */
 .post {
     background-color: #fff;
-    margin: 20px 0;
-    padding: 20px;
+    margin: 2vh 0;
+    padding: 2vh;
     cursor: pointer;
 }
 
@@ -255,8 +255,17 @@ body {
 }
 
 .post-content {
-    padding: 10px 0;
+    padding: 1vh 0;
 }
+
+
+
+
+
+
+
+
+
 
 /* стили для модальных окон */
 .modal {
@@ -268,6 +277,7 @@ body {
     height: 100%;
     z-index: 1000;
     overflow: auto;
+    transition: all 0.3s;
 }
 
 .modal-overlay {
@@ -280,32 +290,62 @@ body {
 }
 
 .modal-content {
+    transform: scale(0.9); /* начальное уменьшение для анимации */
+    opacity: 0; /* делаем его прозрачным для начала */
     background-color: #fff;
     margin: 5% auto;
-    padding: 20px;
+    padding: 2vh;
     width: 70%;
+    transition: all 0.3s;
+    border-radius: 1vh;
+    box-shadow: 0 0 1vh rgba(0,0,0,0.2);
+}
+
+.modal.show .modal-content {
+    transform: scale(1);
+    opacity: 1;
 }
 
 .close-btn {
     position: absolute;
-    right: 20px;
-    top: 10px;
-    font-size: 24px;
+    right: 2vh;
+    top: 1vh;
+    font-size: 2.4vh;
     cursor: pointer;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 3vh;
+    height: 3vh;
+    text-align: center;
+    line-height: 3vh;
 }
 
 .modal-btn {
     display: block;
-    margin: 20px 0;
-    padding: 10px 15px;
+    margin: 2vh 0;
+    padding: 1vh 1.5vh;
     background-color: #333;
     color: #fff;
     text-decoration: none;
     text-align: center;
+    border-radius: 1vh;
+}
+.modal-content img {
+    width: 100%;
+    max-height: 30vh;
+    display: block;
+    margin: 20px 0;
 }
 
 
-
+.modal-content iframe {
+    width: 100%;
+    max-height: 20vh;
+    display: block;
+    margin: 2vh 0;
+}
 
 
 
