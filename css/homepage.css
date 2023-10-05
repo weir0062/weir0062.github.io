@@ -93,9 +93,6 @@
   
 
 
-
-
-
 @media (min-width: 1400px) {
 
 
@@ -109,8 +106,7 @@
     border-radius: 0.5vw;
     overflow: hidden;
     display: flex;
-
-}
+  }
 
   
 .chat-body {
@@ -123,50 +119,101 @@
 }
 
 
-  .about-charlie, .charlie-resume {
-    padding: 2vw 1vw;
-    background-color: var(--content-bg-color);
-    margin: 2vw 3vw;
-    border-bottom: 0.2vw solid #eee;
-    box-shadow: 0 2vw 1vw rgba(0, 0, 0, 0.1);
-  }
+.about-charlie, .charlie-resume {
+  padding: 2vw 1vw;
+  background-color: var(--content-bg-color);
+  margin: 2vw 3vw;
+  border-bottom: 0.2vw solid #eee;
+  box-shadow: 0 2vw 1vw rgba(0, 0, 0, 0.1);
+}
+
+.charlie-image {
+  flex: 1;
+  max-width: 40%;
+  height: auto;
+  margin-right: 2vw;
+}
+
+.charlie-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  padding: 3vw;
+}
+
+.charlie-image img {
+  max-height: 77vh; 
+  width: 100%; 
+  border-radius: 0.77vw;
+  object-fit: cover; 
+}
+
+.charlie-description {
+  flex: 2;
+  padding-left: 3vw; 
+}
+
+.charlie-description h2, .charlie-resume h2 {
+  color: var(--navbar-text-color);
+  font-size: 3.5vw;
+  margin-bottom: 1vw;
+  color: #333;
   
-  .charlie-image {
-    width: 40%;
-    height: 40%;
-    margin-right: 2vw;
+}
+
+.charlie-description p, .charlie-resume p {
+  color: var(--content-text-color);
+  font-size: 2vw;
+}
+
+
+
+
+#funnyButton {
+  width: 10vh; /* Ты можешь изменить размер по своему желанию */
+  cursor: pointer;
+  transition: transform 0.3s cubic-bezier(0.23, 1, 0.32, 1); 
+  position: relative;
+}
+
+
+
+
+
+.social-icons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1vw; /* расстояние между иконками */
+  margin-top: 1vw;
+}
+
+@media (max-width: 767px) {
+  .social-icons {
+    justify-content: center;
+    margin-top: 1.5vw;
   }
-  
-  .charlie-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; 
-    padding: 2vw;
-  }
-  
-  .charlie-image img {
-    max-height: 77vh; /* Это уменьшит высоту изображения */
-    width: auto; /* Это сохранит пропорции изображения */
-    border-radius: 0.5vw;
-  }
-  
-  .charlie-description {
-    width: 45%; 
-    padding-left: 2vw; 
-  }
-  
-  .charlie-description h2, .charlie-resume h2 {
-    color: var(--navbar-text-color);
-    font-size: 1.5vw;
-    margin-bottom: 1vw;
-  }
-  
-  .charlie-description p, .charlie-resume p {
-    color: var(--content-text-color);
-  }
+}
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* на телефон */
+
 
 
 
@@ -214,9 +261,18 @@ body {
   border-radius: 50%;
 }
 
-.charlie-description h2 {
-  margin-top: 0;
+
+.charlie-description h2, .charlie-resume h2 {
+  color: var(--navbar-text-color);
+  font-size: 3.5vw;
+  margin-bottom: 1vw;
   color: #333;
+  
+}
+
+.charlie-description p, .charlie-resume p {
+  color: var(--content-text-color);
+  font-size: 2vw;
 }
 
 /* Стили для секции резюме */
@@ -227,5 +283,24 @@ body {
   margin: 2em 0;
 } 
  
+
+.social-icons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1vw; /* расстояние между иконками */
+  margin-top: 1vw;
+}
+
+  .social-icons {
+    justify-content: center;
+    margin-top: 1.5vw;
+  }
+
+
+#funnyButton {
+  display: none;
+}
+
+
 
 }
