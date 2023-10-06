@@ -8,6 +8,43 @@ body {
   background-color: #f4f4f4; 
 }
 
+@font-face {
+  font-family: "Minecraftia";
+  src: url("fonts/Minecraftia-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+footer {
+  background-color: #1A1A1D;
+  padding: 2vw 1vw;
+  color: #FFF;
+  box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.2);
+  font-family: 'Roboto', sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 90%;
+  margin: 0 auto;
+  flex-wrap: wrap; /* на маленьких экранах контент будет переноситься на новую строку */
+}
+
+.footer-content p {
+  font-weight: 700; /* более жирный текст */
+  margin: 0;
+}
+
+.footer-content h1 {
+  font-size: 1vw;
+  margin: 0;
+}
+
+.footer-content h1 span { /* добавляем иконки рядом с контактами */
+  margin-right: 10px;
+}
 
 :root {
   --navbar-bg-color-default: #333;
@@ -123,5 +160,12 @@ body {
   .nav-link:hover {
     background-color: #555;
   }
+
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+}
+
 
 }
