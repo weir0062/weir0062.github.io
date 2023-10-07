@@ -49,7 +49,7 @@
     border: 0.1vh solid #ccc;
     border-radius: 0.5vh;
     box-shadow: 0 0.2vh 1vh rgba(0, 0, 0, 0.1);
-    display: none; /* hide the chat widget by default */
+    display: none;  
     flex-direction: column;
     position: relative;
     z-index: 1;
@@ -96,18 +96,15 @@
 @media (min-width: 1400px) {
 
 
-
-
   main {
     max-width: 90%;
+    margin: 2vw auto;
     padding: 1vw;
     background-color: #fff;
-    box-shadow: 0px 0.77vw 1.5vw rgba(0, 0, 0, 0.1);
-    border-radius: 0.5vw;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
     overflow: hidden;
-    display: flex;
-  }
-
+}
   
 .chat-body {
   flex-grow: 1;
@@ -115,11 +112,11 @@
   background-color: rgb(255, 255, 255);
   padding: 0px;
   padding: 1vw;
-  height: 22vw; /* Set a fixed height */
+  height: 22vw;  
 }
 
 
-.about-charlie, .charlie-resume {
+.about-charlie  {
   padding: 2vw 1vw;
   background-color: var(--content-bg-color);
   margin: 2vw 3vw;
@@ -153,7 +150,7 @@
   padding-left: 3vw; 
 }
 
-.charlie-description h2, .charlie-resume h2 {
+.charlie-description h2  {
   color: var(--navbar-text-color);
   font-size: 3.5vw;
   margin-bottom: 1vw;
@@ -161,7 +158,7 @@
   
 }
 
-.charlie-description p, .charlie-resume p {
+.charlie-description p  {
   color: var(--content-text-color);
   font-size: 2vw;
 }
@@ -170,31 +167,160 @@
 
 
 #funnyButton {
-  width: 10vh; /* Ты можешь изменить размер по своему желанию */
+  width: 10vh;  
   cursor: pointer;
   transition: transform 0.3s cubic-bezier(0.23, 1, 0.32, 1); 
   position: relative;
 }
 
-
-
-
-
 .social-icons {
   display: flex;
   justify-content: flex-end;
-  gap: 1vw; /* расстояние между иконками */
+  gap: 1vw;  
   margin-top: 1vw;
 }
 
-@media (max-width: 767px) {
-  .social-icons {
-    justify-content: center;
-    margin-top: 1.5vw;
+
+
+
+
+
+.charlie-resume {
+  padding: 2vw 1vw;
+  background-color: #F7F9FC;
+  margin: 2vw 3vw;
+  border-radius: 15px;
+  box-shadow: 0 2vw 1vw rgba(0, 0, 0, 0.1);
+}
+
+.charlie-resume h2 {
+  color: #333;
+  font-size: 3.5vw;
+  margin-bottom: 1vw;
+}
+ 
+
+.charlie-resume h3 {
+  font-size: 2.5vw;
+  color: #555;
+  margin-top: 1.5vw;
+  border-bottom: 1px solid #eee;
+  transition: color 0.3s;
+}
+
+.charlie-resume h3:hover {
+  color: #3498db;
+}
+
+.charlie-resume p {
+  font-size: 1.5vw;
+  transition: transform 0.3s;
+}
+ 
+
+  .resume-section ul {
+    padding-left: 3vw;
+    list-style-type: disc;
   }
+
+  .resume-section li {
+    font-size: 1.8vw;
+    margin-bottom: 1vw;
+    line-height: 1.4;
+  }
+
+  .resume-section a {
+    color: #3498db;
+    transition: color 0.3s;
+  }
+
+  .resume-section a:hover {
+    color: #2c3e50;
+    text-decoration: underline;
+  }
+
+
+
+.skill-card {
+    border: 1px solid #e0e0e0;
+    padding: 1vw;
+    border-radius: 1.5vw;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1vw 2vw rgba(0, 0, 0, 0.2);
+}
+
+.skill-item {
+  margin-bottom: 1.6vw;
 }
 
 
+
+.skill-card li {
+  font-size: 1.4vw;
+}
+
+
+
+
+
+
+label {
+  display: block;
+  font-size: 1.5vw;
+  margin-bottom: 5px;
+  color: #555;
+  transition: color 0.3s;
+}
+
+label:hover {
+  color: #3498db;
+}
+
+.progress {
+  height: 20px;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0;
+  background-color: #3498db;
+  transition: width 1.5s ease-in-out;
+}
+
+
+.projects-container {
+  border: 2px solid #000;
+  padding: 20px;
+}
+
+.project {
+  border-bottom: 1px solid #ccc;
+}
+
+.details-btn {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+
+.project-details {
+  font: 2em sans-serif;
+}
+
 }
 
 
@@ -210,6 +336,25 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
 
 
 /* на телефон */
@@ -228,10 +373,9 @@
     background-color: rgb(255, 255, 255);
     padding: 0px;
     padding: 1vw;
-    height: 65vw; /* Set a fixed height */
+    height: 65vw; 
   }
-
-/* Общие стили */
+ 
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
@@ -239,8 +383,7 @@ body {
   background-color: #F2F2F2;
 }
 
-
-/* Стили для секции о Чарли */
+ 
 .about-charlie {
   background-color: #FFF;
   padding: 2em;
@@ -262,7 +405,7 @@ body {
 }
 
 
-.charlie-description h2, .charlie-resume h2 {
+.charlie-description h2  {
   color: var(--navbar-text-color);
   font-size: 3.5vw;
   margin-bottom: 1vw;
@@ -270,24 +413,17 @@ body {
   
 }
 
-.charlie-description p, .charlie-resume p {
+.charlie-description p  {
   color: var(--content-text-color);
   font-size: 2vw;
 }
-
-/* Стили для секции резюме */
-.charlie-resume {
-  background-color: #FFF;
-  padding: 2em;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin: 2em 0;
-} 
+  
  
 
 .social-icons {
   display: flex;
   justify-content: flex-end;
-  gap: 1vw; /* расстояние между иконками */
+  gap: 1vw;  
   margin-top: 1vw;
 }
 
@@ -296,11 +432,165 @@ body {
     margin-top: 1.5vw;
   }
 
-
 #funnyButton {
   display: none;
 }
 
+
+
+
+
+
+
+.charlie-resume {
+  padding: 2em 1em;
+  background-color: #F7F9FC;
+  margin: 2em 1em;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.charlie-resume h2 {
+  color: #333;
+  font-size: 2.5em;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: transform 0.3s;
+}
+
+.charlie-resume h3 {
+  font-size: 2em;
+  color: #555;
+  margin-top: 1em;
+  border-bottom: 1px solid #eee;
+  transition: color 0.3s;
+}
+
+.charlie-resume p {
+  font-size: 1.2em;
+  transition: transform 0.3s;
+}
+
+.skill-item {
+  margin-bottom: 1em;
+}
+
+label {
+  display: block;
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+  color: #555;
+  transition: color 0.3s;
+}
+
+.progress {
+  height: 20px;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0;
+  background-color: #3498db;
+  transition: width 1.5s ease-in-out;
+}
+
+.resume-section ul {
+  margin-left: 4vw;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+abel {
+  display: block;
+  font-size: 1.5vw;
+  margin-bottom: 5px;
+  color: #555;
+  transition: color 0.3s;
+}
+
+label:hover {
+  color: #3498db;
+}
+
+.progress {
+  height: 20px;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0;
+  background-color: #3498db;
+  transition: width 1.5s ease-in-out;
+}
+
+.projects-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  border: 2px solid #000;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project {
+  padding: 15px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.project:last-child {
+  border-bottom: none;
+}
+
+h3 {
+  cursor: pointer;
+  margin: 0;
+  padding: 5px;
+  font-size: 1.2rem;
+  transition: background-color 0.3s;
+}
+
+h3:hover {
+  background-color: #eee;
+}
+
+.project-details {
+  font-size: 1rem;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+.hidden {
+  display: none;
+}
+
+  h3 {
+      font-size: 1rem;
+  }
+
+  .project-details {
+      font-size: 1.2rem;
+  }
 
 
 }

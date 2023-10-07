@@ -46,3 +46,40 @@ funnyButton.addEventListener('click', function() {
         isAlternateImageShown = false;
     }, 690);
 });
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    let bars = document.querySelectorAll(".progress-bar");
+    bars.forEach(bar => {
+      let percent = bar.getAttribute("data-percent");
+      bar.style.width = `${percent}%`;
+    });
+  });
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  function toggleDetails(element) {
+    const details = element.nextElementSibling;
+    details.classList.toggle('hidden');
+}
