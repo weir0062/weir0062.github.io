@@ -295,6 +295,11 @@ label:hover {
 }
 
 
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+  width: 77%; 
+}
 .projects-container {
   border: 2px solid #000;
   padding: 20px;
@@ -505,6 +510,9 @@ label {
 
 
 
+.resume-section ul {
+  margin-left: 4vw;
+}
 
 
 
@@ -512,10 +520,16 @@ label {
 
 
 
+.resume-section li {
+  margin-bottom: 1vw;
+
+}
 
 
 
-abel {
+
+
+label {
   display: block;
   font-size: 1.5vw;
   margin-bottom: 5px;
@@ -593,4 +607,8 @@ h3:hover {
   }
 
 
+  .skills-container {
+    justify-content: space-between;
+    margin-bottom: 5vw;
+  }
 }
