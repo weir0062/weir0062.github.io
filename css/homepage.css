@@ -531,8 +531,8 @@ label {
 
 label {
   display: block;
-  font-size: 1.5vw;
-  margin-bottom: 5px;
+  font-size: 4.5vw;
+  margin-bottom: 1vw;
   color: #555;
   transition: color 0.3s;
 }
@@ -588,8 +588,8 @@ h3:hover {
 
 .project-details {
   font-size: 1rem;
-  margin-top: 10px;
-  padding: 10px;
+  margin-top: 1vw;
+  padding: 1vw;
   background-color: #f9f9f9;
   border-radius: 5px;
 }
