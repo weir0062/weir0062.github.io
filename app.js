@@ -19,6 +19,7 @@ function addMessage(sender, message) {
   messageElement.textContent = `${sender}: ${message}`;
   chatBody.appendChild(messageElement);
   scrollToBottom();
+  return messageElement; 
 }
 
 async function getOpenAIResponse(userMessage) {
@@ -60,8 +61,10 @@ chatForm.addEventListener('submit', async (e) => {
   const userMessage = chatInput.value;
   addMessage('You', userMessage);
   chatInput.value = '';
-
+  const answeringMessageElement = addMessage('Chatbot', 'Answering...');   
+  
   const chatbotResponse = await getOpenAIResponse(userMessage);
+  chatBody.removeChild(answeringMessageElement);   
   addMessage('Chatbot', chatbotResponse);
 
 });
