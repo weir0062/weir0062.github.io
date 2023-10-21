@@ -1,6 +1,30 @@
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    let bars = document.querySelectorAll(".progress-bar");
+    bars.forEach(bar => {
+      let percent = bar.getAttribute("data-percent");
+      bar.style.width = `${percent}%`;
+    });
+  });
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 let funnyButton = document.querySelector('#funnyButton');
-let isMoving = false; // флаг, который будет указывать, двигается ли кнопка
-let isAlternateImageShown = false; // флаг для контроля отображения альтернативной картинки
+let isMoving = false;  
+let isAlternateImageShown = false;  
 let defaultImage = funnyButton.src;
 
 funnyButton.addEventListener('mousemove', function(event) {
@@ -52,15 +76,6 @@ funnyButton.addEventListener('click', function() {
 
 
 
-
-document.addEventListener("DOMContentLoaded", function() {
-    let bars = document.querySelectorAll(".progress-bar");
-    bars.forEach(bar => {
-      let percent = bar.getAttribute("data-percent");
-      bar.style.width = `${percent}%`;
-    });
-  });
-  
 
 
 

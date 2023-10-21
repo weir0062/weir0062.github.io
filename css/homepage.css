@@ -281,16 +281,16 @@ label:hover {
 }
 
 .progress {
-  height: 20px;
+  height: 2vh;
   background-color: #e0e0e0;
-  border-radius: 10px;
+  border-radius: 1vw;
   overflow: hidden;
 }
 
 .progress-bar {
   height: 100%;
   width: 0;
-  background-color: #3498db;
+  background-color: #5b4ec9;
   transition: width 1.5s ease-in-out;
 }
 
