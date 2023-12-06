@@ -18,8 +18,7 @@
         box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
         border-radius: 5px;
         overflow: hidden;
-    }
-/* Стили для каждого блогового поста */
+    } 
 .post {
     display: flex;
     border-bottom: 1px solid #eee;
@@ -34,16 +33,14 @@
 .post:last-child {
     border-bottom: none;
 }
-
-/* Стили для изображений блога */
+ 
 .post img {
     max-width: 30%;
     margin-right: 2vw;
     border-radius: 0.5vw;
     box-shadow: 0px 0.4vw 1vw rgba(0, 0, 0, 0.1);
 }
-
-/* Стили для контента каждого блогового поста */
+ 
 .post-content {
     flex: 1;
     display: flex;
@@ -102,7 +99,7 @@
     width: 60%;
     box-shadow: 0 1vw 4vw rgba(0, 0, 0, 0.2);
     max-height: 80vh;
-    overflow-y: auto; /* Прокрутка по вертикали, если содержимое выходит за пределы */    
+    overflow-y: auto;  
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -150,18 +147,18 @@
     color: red;
 }
 .modal-btn {
-    display: block;  /* Делает кнопку блочным элементом */
+    display: block;   
     background-color:var(--button-color);
     color: #080000;
-    padding: 1vw 2vw;  /* Увеличиваем отступы для большего размера кнопки */
-    border-radius: 0.5vw;  /* Скругляем края для более мягкого вида */
+    padding: 1vw 2vw;   
+    border-radius: 0.5vw;   
     text-decoration: none;
-    margin: 1vw auto;  /* Центрируем кнопку горизонтально и добавляем вертикальные отступы */
-    text-align: center;  /* Центрируем текст в кнопке */
-    font-weight: bold;  /* Делаем текст жирным */
-    transition: background-color 0.3s, transform 0.3s;  /* Добавляем плавную анимацию для фона и трансформации */
-    width: fit-content;  /* Пусть ширина кнопки соответствует содержимому, но не растягивается на всю ширину контейнера */
-}
+    margin: 1vw auto;   
+    text-align: center;  
+    font-weight: bold;   
+    transition: background-color 0.3s, transform 0.3s;   
+    width: fit-content;  
+    }
 .modal a{
     color: var(--button-text-color);
     text-decoration: none;
@@ -169,7 +166,7 @@
 }
 .modal-btn:hover {
     background-color: var(--button-color);
-    transform: scale(1.05); /* Увеличиваем кнопку немного при наведении */
+    transform: scale(1.05);  
 }
 
 .modal-btn.centered {
