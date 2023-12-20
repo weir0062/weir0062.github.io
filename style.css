@@ -102,8 +102,8 @@ footer {
 
 .nav-item img{
 
-  width: 3vw;
-  height: 5vh;
+  width: 15px;
+  height: auto;
   padding: 0  0 0 0 ;
 }
 
@@ -169,7 +169,7 @@ footer {
 
   .nav-link img{
 
-    width: 3vw;
+    width: 15px;
     height: auto;
   }
 
