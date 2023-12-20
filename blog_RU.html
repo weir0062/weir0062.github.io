@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Работы Чарльза Вира</title>
+    <link rel="shortcut icon" href="images/favicon.png"/>
+    <link rel="icon" type="image/png" href="images/favicon.png"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/blog.css">
+</head>
+<body>
+
+ 
+ <!-- Navigation Bar -->
+ <nav class="custom-navbar home">
+    <span class="navbar-brand">Чарльз Вир</span>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index_Ru.html">Главная</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="blog_RU.html">Блог</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="blog_RU.html">
+            <img src="images/Flags/russia.png" alt="EN">
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="blog.html">
+            <img src="images/Flags/england.jpg" alt="EN">
+          </a>
+        </li>
+      </ul>
+  </nav>
+  
+<!-- End of Navigation Bar -->
+
+<main>
+    
+
+
+
+
+
+
+
+
+
+<!-- Blog Post 3 -->
+<section class="post" onclick="openModal('modal3')">
+    <img src="./images/blog/ProjectArthemis.png" alt="Blog Post Image">
+    <div class="post-content">
+        <h2>Миссия Artemis IV на луну в VR </h2>
+        <p>Разработка VR симуляции миссии полёта на луну в 2024 году в,
+            партнерстве с Канадским национальным музеем Авиации и Космоса.</p>
+    </div>
+</section>
+<!-- Modal for Blog Post 3 -->
+
+
+<div id="modal3" class="modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('modal3')">&times;</span>
+        <h2>Миссия Artemis IV на луну в VR </h2>
+        <p> Походу моего последнего курса в ГеймДеве,  Мне повезло быть одним из немногих приглашенных стать частью большого проекта по разработке симуляции полёта на Луну для канадского музея 
+            Авицации и космоса. Мы работали над этим 8 месяцев, включая работу в самом музее с людьми, где они тестили нашу игру. Я был одним из трех программистов и моя часть составила:
+            <br> -Придумал Дизайн и Сделал с нуля главное меню
+            <br> -Придумал Дизайн и Сделал с нуля Внутриигровое меню
+            <br> -Разработал плавный переход и смену гравитации.
+            <br> -Сделал систему звука на дистанции в зависимости от гравитации
+            <br> -Внедрил систему позволяющую отдавать Haptic feedback в контроллеры в нужные моменты.
+            <br> -Исправил прочие проблемы с UI и улучшил пользовательский экспириенс в целом.</p>
+            <div class="responsive-iframe-container">
+                <iframe width="560" height="1212" src="https://www.youtube.com/embed/_FRUNv3qEyQ?si=7otMudEXqbA2RX4C" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>   
+            </div>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Blog Post 2 -->
+<section class="post" onclick="openModal('modal2')">
+    <img src="./images/blog/StealthGame.jpg" alt="Blog Post Image">
+    <div class="post-content">
+        <h2>Стелс уровень</h2>
+        <p>Маленькая Стелс игра на юнити где показана работа с шейдерами и ИИ.</p>
+    </div>
+</section>
+<!-- Modal for Blog Post 2 -->
+
+
+<div id="modal2" class="modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('modal2')">&times;</span>
+        <h2>Стелс уровень</h2>
+        <p> Эта игра была возможностью проверить свои навыки в программировании базовых ИИ для игр, 
+            а также, чтобы показать работу с Шейдерами, так как 
+            красный конус, показанный на земле от ищущих нас врагов,
+             который выступает их поле зрением, рисуется как шейдер на полу.
+              В данном случае их еще и несколько сразу рисуется в реальном времени.
+               Также здесь я показал навык имплементации мини карты.</p>
+        <a href="https://chakki2209.itch.io/stealth-game" target="_blank" class="modal-btn">Test the Game</a>
+        <img src="./images/blog/StealthGame.jpg" alt="Blog Post Image">
+    </div>
+</div>
+
+
+
+
+
+
+<!-- Blog Post 1 -->
+<section class="post" onclick="openModal('modal1')">
+    <img src="./images/blog/SnakeGame.jpg" alt="Blog Post Image">
+    <div class="post-content">
+        <h2>Плагин Змейка</h2>
+        <p>Классическая змейка сделанная с помощью плагинов .</p>
+    </div>
+</section>
+<!-- Modal for Blog Post 1 -->
+
+
+<div id="modal1" class="modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('modal1')">&times;</span>
+        <h2>Плагин Змейка</h2>
+        <p> Эта змейка отлично демонстрирует как мой навык работы в С++, 
+            так и мой навык работы в C#. Я написал всю логику игры и колизий на С++, 
+            обеспечив максимальную эффективность кода, а затем этот код портировал в Юнити,
+             чтобы там сделать уже переднюю часть игры на C#</p>
+        <a href="https://chakki2209.itch.io/snake-game" target="_blank" class="modal-btn">Test the Game</a>
+        <img src="./images/blog/SnakeGame.jpg" alt="Blog Post Image">
+    </div>
+</div>
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>© 2023 Сделано Чарльзом Виром</p>
+            <h1>
+                <span>📧</span> Почта: charlesweir2016@gmail.com <br>
+                <span>💬</span> Телефонный номер: +7 (985) 965-30-13
+            </h1>
+        </div>
+    </footer>
+    
+   
+  
+
+
+
+
+<script src="./js/blog.js"></script>
+</body>
+</html>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
